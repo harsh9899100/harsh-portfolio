@@ -1,1 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+
+        body {
+            /* Your existing styles */
+            background-image: linear-gradient(45deg, #000000, #5b86e5);
+            font-family: Arial, sans-serif;
+            background-size: 400% 400%;
+            animation: gradientAnimation 10s ease infinite;
+        }
+
+        @keyframes gradientAnimation {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        header {
+            background-color: transparent;
+            color: #0366d6;
+            /* padding: 20px; */
+            position:static;
+        }
+
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            flex-wrap: wrap;
+        }
+
+        h1 {
+            font-size: 24px;
+            color: white;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        nav ul li {
+            font-size: 18px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #00eaff;
+            text-decoration: none;
+        }
+
+        /* ------------------------------------------------------------------------------- */
+
+        .profile-container {
+
+            max-width: 80%;
+            margin: 20px auto;
+            background-color: transparent;
+            padding: 0px;
+            flex-wrap: wrap;
+
+            color: white;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .profile-content {
+            /* flex: 0; */
+            flex-wrap: wrap;
+        }
+
+        .profile-image img {
+            width: 250px;
+            /* Adjust the width as needed */
+            height: 250px;
+            /* Adjust the height as needed */
+            /* border: 1px solid #808080; */
+            /* Add a border around the image */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 2%;
+            /* Makes the image circular */
+        }
+
+
+        .container {
+            text-align: left;
+            max-width: 80%;
+            margin: 20px auto;
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 24px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        .project-card {
+            background-color: #ffffff;
+            margin-top: 40px;
+            padding: 40px;
+            border: 1px solid #e1e4e8;
+            border-radius: 5px;
+        }
+
+        .project-name {
+            font-size: 18px;
+            font-weight: bold;
+            color: #0366d6;
+        }
+
+        .project-description {
+            font-size: 14px;
+            color: #586069;
+        }
+
+        .project-status {
+            font-size: 12px;
+            color: #9a9ea3;
+        }
+
+        a {
+            text-decoration: none;
+            color: #0366d6;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-container">
+            <h1><img src="Logic Stone No Background.png" alt="Harsh-portfolio" srcset="" style="height: 50px;"></h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="profile-container">
+        <div class="profile-content">
+            <h1 style="font-size: 40px;color: rgb(255, 255, 255);">Harsh Kamleshbhai Patel</h1>
+            <p>Software Developer | Web Developer</p>
+        </div>
+        <div class="profile-image">
+            <img src="me.jpg" alt="Harsh">
+        </div>
+    </div>
+
+    <hr>
+
+    <section style="text-align: center;">
+        <div class="container">
+            <h2 style="font-size: 40px;">My Projects</h2>
+    
+            <div class="project-card">
+                <a class="project-name" href="#">BANGLOREAUTOMATION BUSINESS WEBSITE</a>
+                <p class="project-description">
+    
+                    Client has a product selling business and they wanted to make a website where details of all their products appear and customers can make direct contact with their team.<br><br>
+                    Firstly I designed the frontend and then made a website on WiX.com<br><br>
+                    In future I will also add some functionalities as per client`s requirement.<br>
+    
+                </p>
+                <p class="project-status">
+                    Freelancing Project on Fiverr.com (January 2023)
+                </p>
+            </div>
+    
+            <div class="project-card">
+                <a class="project-name" href="#">SERVICES AT FINGERTIPS</a>
+                <p class="project-description">
+                    As a frontend developer, responsible for creating an eye-catching and user-friendly interface for a
+                    multi-service home services platform, with some assistance in backend development.
+                </p>
+                <p class="project-status">GTU Design Engineering Project (June 2022)</p>
+            </div>
+    
+            <div class="project-card">
+                <a class="project-name" href="#">SERVICES AT FINGERTIPS</a>
+                <p class="project-description">
+                    As a frontend developer, responsible for creating an eye-catching and user-friendly interface for a
+                    multi-service home services platform, with some assistance in backend development.
+                </p>
+                <p class="project-status">GTU Design Engineering Project (June 2022)</p>
+            </div>
+    
+    
+            <div class="project-card">
+                <a class="project-name" href="#">SERVICES AT FINGERTIPS</a>
+                <p class="project-description">
+                    As a frontend developer, responsible for creating an eye-catching and user-friendly interface for a
+                    multi-service home services platform, with some assistance in backend development.
+                </p>
+                <p class="project-status">GTU Design Engineering Project (June 2022)</p>
+            </div>
+    
+        </div>
+    </section>
+    
+</body>
+
+</html>
